@@ -1,3 +1,4 @@
+<!-- 26-NguyenThu-DeleteUser -->
 <?php
 require_once 'models/UserModel.php';
 $userModel = new UserModel();
