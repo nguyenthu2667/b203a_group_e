@@ -1,0 +1,12 @@
+delete_user.php
+
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
+    <div class="alert alert-danger fase in">
+        <input type="hidden" name="id" value="<?php echo $id ?>">
+        <p>Bạn có chắc muốn xóa người dùng <?php if (!empty($user[0]['name'])) echo $user[0]['name'] ?> ?</p>
+        <p>
+            <input type="submit" value="yes" class="btn btn-danger">
+            <a href="index.php" class="btn btn-default"> No</a>
+        </p>
+    </div>
+</form>
