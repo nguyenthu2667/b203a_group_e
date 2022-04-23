@@ -30,8 +30,8 @@ $users = $userModel->getUsers($params);
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
+                        <th scope="col">Name</th>
                         <th scope="col">Username</th>
-                        <th scope="col">Fullname</th>
                         <th scope="col">Type</th>
                         <th scope="col">Actions</th>
                     </tr>
@@ -44,7 +44,7 @@ $users = $userModel->getUsers($params);
                                 <?php echo $user['name']?>
                             </td>
                             <td>
-                                <?php echo $user['fullname']?>
+                                <?php echo $user['username']?>
                             </td>
                             <td>
                                 <?php echo $user['type']?>
